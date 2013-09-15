@@ -11,7 +11,7 @@ namespace MvvmDemo.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 				
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.UserViewModel>();
         }
     }
 }

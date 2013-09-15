@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmDemo.WinPhone", "MvvmDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmDemo.WinStore", "MvvmDemo.WinStore\MvvmDemo.WinStore.csproj", "{E532B802-D31F-44FA-9D33-07B998028A36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmDemo.Core.iOS", "MvvmDemo.Core.iOS\MvvmDemo.Core.iOS.csproj", "{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,16 @@ Global
 		{E532B802-D31F-44FA-9D33-07B998028A36}.Release|x86.ActiveCfg = Release|x86
 		{E532B802-D31F-44FA-9D33-07B998028A36}.Release|x86.Build.0 = Release|x86
 		{E532B802-D31F-44FA-9D33-07B998028A36}.Release|x86.Deploy.0 = Release|x86
+		{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}.Release|ARM.ActiveCfg = Release|Any CPU
+		{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}.Release|x64.ActiveCfg = Release|Any CPU
+		{5FFF6C9D-5E68-4E69-A0EE-FA6EC7398584}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

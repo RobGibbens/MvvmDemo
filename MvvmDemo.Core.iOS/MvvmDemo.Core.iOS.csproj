@@ -34,9 +34,18 @@
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\MvvmDemo.Core\App.cs">
+      <Link>App.cs</Link>
+    </Compile>
+    <Compile Include="..\MvvmDemo.Core\ViewModels\UserViewModel.cs">
+      <Link>ViewModels\UserViewModel.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\MvvmDemo.Core\packages.config">
+      <Link>packages.config</Link>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,5 +53,15 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\MvvmDemo.Core\ToDo-MvvmCross\_ Core.txt">
+      <Link>ToDo-MvvmCross\_ Core.txt</Link>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkReference="a3f531b7-f56d-4bc7-ba90-51c1ecb0863e" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

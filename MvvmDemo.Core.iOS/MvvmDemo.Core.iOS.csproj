@@ -43,20 +43,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\MvvmDemo.Core\packages.config">
-      <Link>packages.config</Link>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\MvvmDemo.Core\ToDo-MvvmCross\_ Core.txt">
-      <Link>ToDo-MvvmCross\_ Core.txt</Link>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ProjectExtensions>

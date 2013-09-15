@@ -80,6 +80,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MvvmDemo.Core.iOS\MvvmDemo.Core.iOS.csproj">
+      <Project>{5fff6c9d-5e68-4e69-a0ee-fa6ec7398584}</Project>
+      <Name>MvvmDemo.Core.iOS</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

@@ -4,11 +4,11 @@ namespace MvvmDemo.Core.ViewModels
 {
 	public class UserViewModel : MvxViewModel
 	{
-		private string _hello = "Hello MvvmCross";
-		public string Hello
+		private string _firstName = "";
+		public string FirstName
 		{
-			get { return _hello; }
-			set { _hello = value; RaisePropertyChanged(() => Hello); }
+			get { return _firstName; }
+			set { _firstName = value; RaisePropertyChanged(() => FirstName); }
 		}
 	}
 }

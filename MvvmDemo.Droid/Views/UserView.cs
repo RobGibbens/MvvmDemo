@@ -9,10 +9,17 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Cirrious.MvvmCross.Droid.Views;
 
 namespace MvvmDemo.Droid.Views
 {
-	class UserView
+	[Activity(Label = "View for UserViewModel")]
+	public class UserView : MvxActivity
 	{
+		protected override void OnCreate(Bundle bundle)
+		{
+			base.OnCreate(bundle);
+			SetContentView(Resource.Layout.UserView);
+		}
 	}
 }

@@ -19,15 +19,15 @@ namespace MvvmDemo.iOS.Views
 			base.ViewDidLoad();
 
 
-			var fullNameLabel = new UILabel(new RectangleF(10, 10, 300, 40));
+			var fullNameLabel = new UILabel(new RectangleF(10, 80, 300, 40));
 			Add(fullNameLabel);
 
-			var firstNameTextBox = new UITextField(new RectangleF(10, 50, 300, 40));
+			var firstNameTextBox = new UITextField(new RectangleF(10, 120, 300, 40));
 			firstNameTextBox.BorderStyle = UITextBorderStyle.Line;
 			Add(firstNameTextBox);
 
 
-			var lastNameTextBox = new UITextField(new RectangleF(10, 90, 300, 40));
+			var lastNameTextBox = new UITextField(new RectangleF(10, 180, 300, 40));
 			lastNameTextBox.BorderStyle = UITextBorderStyle.Line;
 			Add(lastNameTextBox);
 

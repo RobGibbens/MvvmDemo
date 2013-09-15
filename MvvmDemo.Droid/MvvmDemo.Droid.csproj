@@ -66,6 +66,12 @@
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MvvmDemo.Core.Droid\MvvmDemo.Core.Droid.csproj">
+      <Project>{917f97eb-e38e-4948-b116-5304d942a2a9}</Project>
+      <Name>MvvmDemo.Core.Droid</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

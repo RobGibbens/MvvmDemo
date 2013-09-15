@@ -77,8 +77,8 @@
     <Compile Include="..\MvvmDemo.Core\App.cs">
       <Link>App.cs</Link>
     </Compile>
-    <Compile Include="..\MvvmDemo.Core\ViewModels\ConferencesViewModel.cs">
-      <Link>ViewModels\ConferencesViewModel.cs</Link>
+    <Compile Include="..\MvvmDemo.Core\Dtos\FullConferenceDto.cs">
+      <Link>Dtos\FullConferenceDto.cs</Link>
     </Compile>
     <Compile Include="..\MvvmDemo.Core\ViewModels\UserViewModel.cs">
       <Link>ViewModels\UserViewModel.cs</Link>

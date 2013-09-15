@@ -93,6 +93,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -105,6 +106,9 @@
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
     <Compile Include="Setup.cs" />
+    <Compile Include="Views\ConferencesView.xaml.cs">
+      <DependentUpon>ConferencesView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
     </Compile>
@@ -115,6 +119,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ConferencesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -177,8 +185,14 @@
     <Reference Include="Cirrious.MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.12\lib\sl4-wp71\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Json">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Json.3.0.12\lib\sl4-wp71\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Cirrious.MvvmCross.WindowsPhone">
       <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.0.12\lib\sl4-wp71\Cirrious.MvvmCross.WindowsPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Json.3.0.12\lib\sl4-wp71\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup />

@@ -19,7 +19,6 @@ namespace MvvmDemo.Core.Dtos
 		public DateTime registrationCloses { get; set; }
 		public string description { get; set; }
 		public string location { get; set; }
-		public AddressDto address { get; set; }
 		public string tagline { get; set; }
 		public string imageUrl { get; set; }
 		public bool isLive { get; set; }
@@ -41,8 +40,6 @@ namespace MvvmDemo.Core.Dtos
 		public List<string> sessionTypes { get; set; }
 		public List<string> subjects { get; set; }
 		public List<string> tags { get; set; }
-
-		public List<FullSessionDto> sessions { get; set; }
 
 		public int numberOfSessions { get; set; }
 		public bool? isAddedToSchedule { get; set; }

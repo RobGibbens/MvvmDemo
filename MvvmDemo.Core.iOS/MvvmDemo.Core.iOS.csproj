@@ -40,9 +40,13 @@
     <Compile Include="..\MvvmDemo.Core\Dtos\FullConferenceDto.cs">
       <Link>Dtos\FullConferenceDto.cs</Link>
     </Compile>
+    <Compile Include="..\MvvmDemo.Core\ViewModels\ConferencesViewModel.cs">
+      <Link>ViewModels\ConferencesViewModel.cs</Link>
+    </Compile>
     <Compile Include="..\MvvmDemo.Core\ViewModels\UserViewModel.cs">
       <Link>ViewModels\UserViewModel.cs</Link>
     </Compile>
+    <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,8 +68,14 @@
     <Reference Include="Cirrious.MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.0.12\lib\MonoTouch40\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Json">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Json.3.0.12\lib\MonoTouch40\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Cirrious.MvvmCross.Touch">
       <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.0.12\lib\MonoTouch40\Cirrious.MvvmCross.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Json.3.0.12\lib\MonoTouch40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />

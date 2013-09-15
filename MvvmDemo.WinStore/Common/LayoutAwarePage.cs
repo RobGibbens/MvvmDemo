@@ -10,6 +10,7 @@ using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Cirrious.MvvmCross.WindowsStore.Views;
 
 namespace MvvmDemo.WinStore.Common
 {
@@ -34,7 +35,7 @@ namespace MvvmDemo.WinStore.Common
 	/// </list>
 	/// </summary>
 	[Windows.Foundation.Metadata.WebHostHidden]
-	public class LayoutAwarePage : Page
+	public class LayoutAwarePage : MvxStorePage
 	{
 		/// <summary>
 		/// Identifies the <see cref="DefaultViewModel"/> dependency property.

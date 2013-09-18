@@ -29,7 +29,26 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+			<phone:LongListSelector ItemsSource="{Binding Conferences}"
+																		Name="ConferencesList"
+																		ScrollViewer.VerticalScrollBarVisibility="Disabled">
+				<phone:LongListSelector.ItemTemplate>
+					<DataTemplate>
+						<StackPanel>
+							<Border BorderBrush="#FF81994D" BorderThickness="2" Background="White">
+								<StackPanel Orientation="Vertical">
+									<Image Source="{Binding imageUrl}"  Margin="0,0,0,0"></Image>
+								</StackPanel>
+							</Border>
+							<StackPanel VerticalAlignment="Bottom"  Orientation="Vertical" Margin="0,0,0,15" Background="#FF81994D" Width="460">
+								<TextBlock TextAlignment="Center" Foreground="White" Text="{Binding name}" FontSize="28" TextWrapping="Wrap"></TextBlock>
+								<TextBlock TextAlignment="Center" Foreground="White" Text="{Binding start}" FontSize="20" TextWrapping="Wrap" Margin="0,0,0,5"></TextBlock>
+								<TextBlock TextAlignment="Center" Foreground="White" Text="{Binding city}" FontSize="20" TextWrapping="Wrap" Margin="0,0,0,5"></TextBlock>
+							</StackPanel>
+						</StackPanel>
+					</DataTemplate>
+				</phone:LongListSelector.ItemTemplate>
+			</phone:LongListSelector>
         </Grid>
     </Grid>
 

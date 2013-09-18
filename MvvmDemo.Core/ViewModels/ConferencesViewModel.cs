@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.ViewModels;
 using System.Net.Http;
@@ -45,6 +46,16 @@ namespace MvvmDemo.Core.ViewModels
 			{
 				_conferences = value;
 				RaisePropertyChanged(() => Conferences);
+			}
+		}
+
+		private MvxCommand _showDetailCommand;
+		public ICommand ShowDetailCommand
+		{
+			get
+			{
+				_showDetailCommand = _showDetailCommand ?? new MvxCommand(() => ShowViewModel<UserViewModel>());
+				return _showDetailCommand;
 			}
 		}
 	}

@@ -37,6 +37,9 @@
     <Compile Include="..\MvvmDemo.Core\App.cs">
       <Link>App.cs</Link>
     </Compile>
+    <Compile Include="..\MvvmDemo.Core\Dtos\ConferenceDto.cs">
+      <Link>Dtos\ConferenceDto.cs</Link>
+    </Compile>
     <Compile Include="..\MvvmDemo.Core\ViewModels\UserViewModel.cs">
       <Link>ViewModels\UserViewModel.cs</Link>
     </Compile>
@@ -78,7 +81,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="a3f531b7-f56d-4bc7-ba90-51c1ecb0863e" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="a3f531b7-f56d-4bc7-ba90-51c1ecb0863e" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

@@ -124,7 +124,6 @@ namespace MvvmDemo.Droid
 		{
 			
 			// aapt resource value: 0x7f030000
-<<<<<<< HEAD
 			public const int ConferencesView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
@@ -141,18 +140,7 @@ namespace MvvmDemo.Droid
 			
 			// aapt resource value: 0x7f030005
 			public const int UserView = 2130903045;
-=======
-			public const int FirstView = 2130903040;
-			
-			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
-			
-			// aapt resource value: 0x7f030002
-			public const int SplashScreen = 2130903042;
-			
-			// aapt resource value: 0x7f030003
-			public const int UserView = 2130903043;
->>>>>>> b3256fe8e5e0b7e4938975d4c2ac3a5fd79ad1ac
+
 			
 			static Layout()
 			{

@@ -18,7 +18,6 @@ namespace MvvmDemo.iOS.Views
 			View = new UIView() { BackgroundColor = UIColor.White };
 			base.ViewDidLoad();
 
-
 			var fullNameLabel = new UILabel(new RectangleF(10, 80, 300, 40));
 			Add(fullNameLabel);
 

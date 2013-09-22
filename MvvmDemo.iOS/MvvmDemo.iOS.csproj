@@ -81,6 +81,7 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\ConferencesView.cs" />
+    <Compile Include="Layout.cs" />
     <Compile Include="Views\UserView.cs" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />

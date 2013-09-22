@@ -9,20 +9,22 @@ using MvvmDemo.Core.ViewModels;
 namespace MvvmDemo.iOS.Views
 {
 	[Register("ConferencesView")]
-	public class ConferencesView : MvxTableViewController
+	public class ConferencesView : MvxViewController
 	{
 		public override void ViewDidLoad()
 		{
+			View = new UIView() { BackgroundColor = UIColor.White };
 			base.ViewDidLoad();
 
-			var source = new MvxStandardTableViewSource(TableView, "TitleText name;ImageUrl imageUrl");
-			TableView.Source = source;
+			var showDetailButton = new UIButton {};
+			showDetailButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+			showDetailButton.Frame = new RectangleF(10,200, 300,100);
+			showDetailButton.SetTitle("Show Detail", UIControlState.Normal);
+			Add(showDetailButton);
 
 			var set = this.CreateBindingSet<ConferencesView, ConferencesViewModel>();
-			set.Bind(source).To(vm => vm.Conferences);
+			set.Bind(showDetailButton).To(vm => vm.ShowDetailCommand);
 			set.Apply();
-
-			TableView.ReloadData();
 		}
 	}
 }

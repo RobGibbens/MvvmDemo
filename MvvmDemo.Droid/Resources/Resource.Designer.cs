@@ -140,7 +140,6 @@ namespace MvvmDemo.Droid
 			
 			// aapt resource value: 0x7f030005
 			public const int UserView = 2130903045;
-
 			
 			static Layout()
 			{
